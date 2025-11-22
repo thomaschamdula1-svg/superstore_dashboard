@@ -40,6 +40,13 @@ st.title("STATCAP SALES DASHOBARD")
 
 df = pd.read_excel("superstore.xlsx")
 
+#total sales
+total_sales = df['sales'].sum()
+st.header("summary metrics")
+st.metric(label="total sales",value=f"$ {total_sales:,.2f}")
+#total profit
+total_profit=df['profit'].sum()
+st.metric(label="total profit", value = f"$ {total_profit:,.2f}")
 #prepare counts
 
 cat_counts = df['category'].value_counts().reset_index()
