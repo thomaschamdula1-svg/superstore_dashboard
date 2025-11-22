@@ -9,17 +9,11 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import geopandas as gpd #map
-from shapely.geometry import point
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
 import statsmodels.api as sm
 from scipy import stats
-import sklearn #machine learning
-import torch #deep learning
-import sympy #CAS
-from IPython.display import display
+
 
 
 # In[2]:
@@ -33,7 +27,7 @@ df = pd.read_excel("superstore.xlsx")
 
 
 # LOAD THE FIRST 10 ROWS OF PROJECT DATASET
-display(df.head(6))
+print(df.head(6))
 
 
 # In[7]:
